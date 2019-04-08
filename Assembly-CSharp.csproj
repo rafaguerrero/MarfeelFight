@@ -55,6 +55,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Blink.cs" />
      <Compile Include="Assets\Scripts\GoToChoose.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Navigator.cs" />
+     <Compile Include="Assets\Scripts\Navigation.cs" />
+     <Compile Include="Assets\Scripts\PlayersInfo.cs" />
      <Compile Include="Assets\Scripts\SelectPlayer.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/rafaelguerreroclemente/Documents/offtime/MarfeelFight/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
