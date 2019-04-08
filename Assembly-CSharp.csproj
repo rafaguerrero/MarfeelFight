@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Blink.cs" />
+     <Compile Include="Assets\Scripts\FightBuilder.cs" />
      <Compile Include="Assets\Scripts\GoToChoose.cs" />
      <Compile Include="Assets\Scripts\Interfaces\Navigator.cs" />
      <Compile Include="Assets\Scripts\Navigation.cs" />
