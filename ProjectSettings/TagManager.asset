@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Active
   - Navigation
+  - Enemy
+  - PlayerInfo
+  - EnemyInfo
+  - Pannel
   layers:
   - Default
   - TransparentFX

@@ -53,13 +53,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AttackPannel.cs" />
+     <Compile Include="Assets\Scripts\Attacks\BasicAttack.cs" />
+     <Compile Include="Assets\Scripts\Attacks\WFH.cs" />
+     <Compile Include="Assets\Scripts\AttackUI.cs" />
      <Compile Include="Assets\Scripts\Blink.cs" />
+     <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\FightBuilder.cs" />
+     <Compile Include="Assets\Scripts\GameMaster.cs" />
      <Compile Include="Assets\Scripts\GoToChoose.cs" />
+     <Compile Include="Assets\Scripts\IA.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Attack.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Buff.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\GetReady.cs" />
      <Compile Include="Assets\Scripts\Interfaces\Navigator.cs" />
      <Compile Include="Assets\Scripts\Navigation.cs" />
-     <Compile Include="Assets\Scripts\PlayersInfo.cs" />
      <Compile Include="Assets\Scripts\SelectPlayer.cs" />
+     <Compile Include="Assets\Scripts\ShowPannel.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/rafaelguerreroclemente/Documents/offtime/MarfeelFight/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

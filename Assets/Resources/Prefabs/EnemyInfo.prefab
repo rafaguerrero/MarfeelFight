@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2362035683243710962, guid: 3a23b979d380644fdaeb276a81606be5,
         type: 3}
       propertyPath: m_Name
-      value: EnemyInfo Variant
+      value: EnemyInfo
       objectReference: {fileID: 0}
     - target: {fileID: 3155532797239823728, guid: 3a23b979d380644fdaeb276a81606be5,
         type: 3}
@@ -137,16 +137,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 1.6999512
       objectReference: {fileID: 0}
-    - target: {fileID: 8474051005105186476, guid: 3a23b979d380644fdaeb276a81606be5,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8474051005105186476, guid: 3a23b979d380644fdaeb276a81606be5,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1942305891776315998, guid: 3a23b979d380644fdaeb276a81606be5,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -160,7 +150,17 @@ PrefabInstance:
     - target: {fileID: 1942305891776315998, guid: 3a23b979d380644fdaeb276a81606be5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -328.1
+      value: -372
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474051005105186476, guid: 3a23b979d380644fdaeb276a81606be5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474051005105186476, guid: 3a23b979d380644fdaeb276a81606be5,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3301456670516866447, guid: 3a23b979d380644fdaeb276a81606be5,
         type: 3}

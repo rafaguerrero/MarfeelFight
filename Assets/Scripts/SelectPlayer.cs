@@ -21,11 +21,11 @@ public class SelectPlayer : MonoBehaviour, Navigator {
     public void Action() {
         Debug.Log("Move to next Sceen");
 
-        PlayersInfo.player = this.gameObject.name;
-        PlayersInfo.enemy = SelectEnemy(this.gameObject.name);
+        GameMaster.player = this.gameObject.name;
+        GameMaster.enemy = SelectEnemy(this.gameObject.name);
 
 
-        Debug.Log("Playing with " + PlayersInfo.player + " VS " + PlayersInfo.enemy);
+        Debug.Log("Playing with " + GameMaster.player + " VS " + GameMaster.enemy);
 
         SceneManager.LoadScene("Fight", LoadSceneMode.Single);  
     }
