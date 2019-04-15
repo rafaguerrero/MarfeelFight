@@ -8,6 +8,7 @@ public class Character : MonoBehaviour {
     public int jobPoints;
     public int maxJobPoints;
     public int speed;
+    public int power;
     public List<GameObject> attacks;
     public List<GameObject> buffs;
 }

@@ -12,6 +12,64 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: attacks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: life
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: maxLive
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: jobPoints
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: maxJobPoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: attacks.Array.data[0]
+      value: 
+      objectReference: {fileID: 4244460315966535351, guid: 733a887bc51eb441f965f0f6081f69cb,
+        type: 3}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: attacks.Array.data[1]
+      value: 
+      objectReference: {fileID: 4738422975911340185, guid: 93655a7784b97491995a021cee5b3037,
+        type: 3}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: power
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057639103871095412, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b48e7c1a91b347c09cd983a0416a007,
+        type: 3}
+    - target: {fileID: 4057639103871095412, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7194454147166752710, guid: 8795e0cd03b594142a47871f3061259b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,59 +124,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: attacks.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: life
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: maxLive
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: jobPoints
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: maxJobPoints
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: speed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: attacks.Array.data[0]
-      value: 
-      objectReference: {fileID: 4244460315966535351, guid: 733a887bc51eb441f965f0f6081f69cb,
-        type: 3}
-    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: attacks.Array.data[1]
-      value: 
-      objectReference: {fileID: 4738422975911340185, guid: 93655a7784b97491995a021cee5b3037,
-        type: 3}
-    - target: {fileID: 4057639103871095412, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0b48e7c1a91b347c09cd983a0416a007,
-        type: 3}
-    - target: {fileID: 4057639103871095412, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795e0cd03b594142a47871f3061259b, type: 3}

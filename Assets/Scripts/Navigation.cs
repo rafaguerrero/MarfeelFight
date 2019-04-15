@@ -73,6 +73,5 @@ public class Navigation : MonoBehaviour, Navigator {
 
     public void Action() {
         script.Action();
-        Debug.Log("Action!!");
     }
 }

@@ -4,12 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ShowPannel : MonoBehaviour, GetReady {
-    public void Ready() {
-        GameObject prefab = Resources.Load<GameObject>("Prefabs/AttackPannel"); 
-        Vector3 pos = new Vector3(0, 0, 0);
+    
+    GameObject pannel;
 
-        GameObject pannel = Instantiate(prefab, pos, Quaternion.identity);
-
+    IEnumerator waiter() {
+        yield return new WaitForSeconds(2);
+        
         pannel.GetComponent<AttackPannel>().Populate(this.gameObject.GetComponent<Character>().attacks);
+        pannel.GetComponent<Canvas>().enabled = true;
+    }
+    
+    public void Ready() {
+        GameObject prefab = Resources.Load<GameObject>("Prefabs/AttackPannel");
+        pannel = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+
+        StartCoroutine(waiter());
     }
 }

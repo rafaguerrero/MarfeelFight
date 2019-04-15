@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class FightBuilder : MonoBehaviour {
     void Start() {
-        
         // ------------ DEBUG MODE -------------
         GameMaster.player = "Cobas";
         GameMaster.enemy = "Rafa";
