@@ -58,11 +58,9 @@
      <Compile Include="Assets\Scripts\Attack.cs" />
      <Compile Include="Assets\Scripts\AttackPannel.cs" />
      <Compile Include="Assets\Scripts\AttackUI.cs" />
-     <Compile Include="Assets\Scripts\Blink.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\FightBuilder.cs" />
      <Compile Include="Assets\Scripts\GameMaster.cs" />
-     <Compile Include="Assets\Scripts\GoToChoose.cs" />
      <Compile Include="Assets\Scripts\IA.cs" />
      <Compile Include="Assets\Scripts\Interfaces\Buff.cs" />
      <Compile Include="Assets\Scripts\Interfaces\GetReady.cs" />
@@ -71,6 +69,8 @@
      <Compile Include="Assets\Scripts\Round.cs" />
      <Compile Include="Assets\Scripts\SelectPlayer.cs" />
      <Compile Include="Assets\Scripts\ShowPannel.cs" />
+     <Compile Include="Assets\Scripts\UI\Blink.cs" />
+     <Compile Include="Assets\Scripts\UI\TapToNextSceen.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.1f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
