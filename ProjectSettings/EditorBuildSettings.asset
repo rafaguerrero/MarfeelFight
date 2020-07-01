@@ -6,12 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Logo.unity
+    path: Assets/Scenes/Intro.unity
     guid: 5fd6f853a555e42c8ac9cb1bc9c17b50
   - enabled: 1
-    path: Assets/Scenes/ChooseCharacter.unity
-    guid: bb267c056bf6b4736a5e38b355785356
+    path: Assets/Scenes/Fight_Old.unity
+    guid: 90f0d9ef59d4a4b92b1e95d6cf14de2f
+  - enabled: 1
+    path: Assets/Scenes/Account_Creation.unity
+    guid: 9ee47daccbc474b2082cca2de602a8c0
+  - enabled: 1
+    path: Assets/Scenes/Char_Creation.unity
+    guid: 328758980442343679ddbb626cd94bf4
   - enabled: 1
     path: Assets/Scenes/Fight.unity
-    guid: 90f0d9ef59d4a4b92b1e95d6cf14de2f
+    guid: 27d5f51345ea34dd6ae47df5213ef6c8
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: e7a02aa5f20e443a08a71a9c1c552e89
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 3f937519da72f41a08ea9c9008f3da36
+  - enabled: 1
+    path: Assets/Scenes/Office_Creation.unity
+    guid: 71f0c6de0a8ce41dc8c675c7cbb3c6c1
   m_configObjects: {}
