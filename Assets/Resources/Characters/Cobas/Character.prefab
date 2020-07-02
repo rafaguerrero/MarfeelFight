@@ -7,15 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7783919486004827569, guid: 8795e0cd03b594142a47871f3061259b,
-        type: 3}
-      propertyPath: m_Name
-      value: Character
-      objectReference: {fileID: 0}
     - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
         type: 3}
       propertyPath: attacks.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
         type: 3}
@@ -59,6 +54,18 @@ PrefabInstance:
       propertyPath: power
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: attacks.Array.data[2]
+      value: 
+      objectReference: {fileID: 3449850393984653610, guid: e834e3f212fa84794967d302c42743ed,
+        type: 3}
+    - target: {fileID: 1018893585798031545, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: attacks.Array.data[3]
+      value: 
+      objectReference: {fileID: 3164315375942425982, guid: 1515d8bf8ec994fbc9e95ea1eff67e27,
+        type: 3}
     - target: {fileID: 4057639103871095412, guid: 8795e0cd03b594142a47871f3061259b,
         type: 3}
       propertyPath: m_Sprite
@@ -124,6 +131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783919486004827569, guid: 8795e0cd03b594142a47871f3061259b,
+        type: 3}
+      propertyPath: m_Name
+      value: Character
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8795e0cd03b594142a47871f3061259b, type: 3}

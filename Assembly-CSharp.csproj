@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{26CE5CD3-9077-D4B5-1E6D-84A414A6BE5F}</ProjectGuid>
+    <ProjectGuid>{678C59BA-6BBD-95CB-DC82-F08CB38911F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,21 +55,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Attack.cs" />
-     <Compile Include="Assets\Scripts\AttackPannel.cs" />
-     <Compile Include="Assets\Scripts\AttackUI.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
-     <Compile Include="Assets\Scripts\FightBuilder.cs" />
-     <Compile Include="Assets\Scripts\GameMaster.cs" />
-     <Compile Include="Assets\Scripts\IA.cs" />
+     <Compile Include="Assets\Scripts\Fight\Attack.cs" />
+     <Compile Include="Assets\Scripts\Fight\FightBuilder.cs" />
+     <Compile Include="Assets\Scripts\Fight\GameMaster.cs" />
+     <Compile Include="Assets\Scripts\Fight\IA.cs" />
+     <Compile Include="Assets\Scripts\Fight\Round.cs" />
      <Compile Include="Assets\Scripts\Interfaces\Buff.cs" />
      <Compile Include="Assets\Scripts\Interfaces\GetReady.cs" />
      <Compile Include="Assets\Scripts\Interfaces\Navigator.cs" />
-     <Compile Include="Assets\Scripts\Navigation.cs" />
-     <Compile Include="Assets\Scripts\Round.cs" />
-     <Compile Include="Assets\Scripts\SelectPlayer.cs" />
-     <Compile Include="Assets\Scripts\ShowPannel.cs" />
+     <Compile Include="Assets\Scripts\UI\AttackButton.cs" />
+     <Compile Include="Assets\Scripts\UI\BattleUI.cs" />
      <Compile Include="Assets\Scripts\UI\Blink.cs" />
+     <Compile Include="Assets\Scripts\UI\Fight Options\AbstractOption.cs" />
+     <Compile Include="Assets\Scripts\UI\Fight Options\Attacks.cs" />
+     <Compile Include="Assets\Scripts\UI\Fight Options\Chat.cs" />
+     <Compile Include="Assets\Scripts\UI\Fight Options\Defend.cs" />
+     <Compile Include="Assets\Scripts\UI\Fight Options\Quit.cs" />
+     <Compile Include="Assets\Scripts\UI\Navigation.cs" />
+     <Compile Include="Assets\Scripts\UI\ShowFightUI.cs" />
      <Compile Include="Assets\Scripts\UI\TapToNextSceen.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.1f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -255,13 +259,13 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.1f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.1f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -609,67 +613,67 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.1f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>/Users/rafaelguerreroclemente/Documents/projects/MarfeelFight/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ <HintPath>/Users/rafaelguerreroclemente/Documents/projects/OfficeWars/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
